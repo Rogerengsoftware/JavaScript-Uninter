@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    //Crie um arrey Vazio para os números
+    let numeros = [];
+
+    //Pede ao usuário para digitar 10 números e armazen cada um no arrey
+    for (let i = 0; i < 10; i++) {
+       numeros.push(parseInt(prompt(`Digite o ${i+1}° número:`)));
+    }
+
+    // Crai variáveis para armazenar a quantidade de números pares e ímpares
+    let pares = 0;
+    let ímpares = 0;
+
+    //Percorre o arrey de um número e verifica se cada um é par ou ímpar 
+    for (let i = 0; i < numeros.length; i++) {
+        if (numeros[i] % 2 === 0) {
+            pares ++;
+        } else {
+            ímpares++;
+        }
+    }
+
+      //Exibe a quantidade de números de números pares e ímpares
+      console.log(`Quantidade de números pares: ${pares}`);
+      console.log(`Quantidade de números ímpares: ${ímpares}`);
+      
+
+    //Exibe a quantidade de números de números pares e ímpares
+    alert(`Quantidade de números pare: ${pares}\nQuantidade de números ímpares: ${ímpares}`)
+    //Console.log(`Quantidade de números ímpares: ${ímpares}`);
+
+</script>
+
+    
+</body>
+</html>

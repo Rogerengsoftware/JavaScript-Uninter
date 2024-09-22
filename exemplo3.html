@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentual de Homens e Mulheres</title>
+    <style>
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+            text-align: center;
+        }
+        th, td {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Percentual de Homens e Mulheres</h2>
+
+    <script>
+        // Solicita a quantidade de homens e mulheres
+        var qtdHomens = parseInt(prompt("Digite a quantidade de homens na turma: "));
+        var qtdMulheres = parseInt(prompt("Digite a quantidade de mulheres na turma: "));
+
+        // Calcula o total de alunos
+        var totalAlunos = qtdHomens + qtdMulheres;
+
+        // Calcula o percentual de homens e mulheres
+        var percHomens = (qtdHomens / totalAlunos) * 100;
+        var percMulheres = (qtdMulheres / totalAlunos) * 100;
+
+        // Cria uma tabela para exibir os resultados
+        document.write("<table>");
+        document.write("<tr><th>Grupo</th><th>Quantidade</th><th>Percentual (%)</th></tr>");
+        document.write("<tr><td>Homens</td><td>" + qtdHomens + "</td><td>" + percHomens.toFixed(2) + "%</td></tr>");
+        document.write("<tr><td>Mulheres</td><td>" + qtdMulheres + "</td><td>" + percMulheres.toFixed(2) + "%</td></tr>");
+        document.write("</table>");
+    </script>
+</body>
+</html>

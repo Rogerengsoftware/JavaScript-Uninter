@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo</title>
+</head>
+<body>
+    <script>
+        // Leitura do sexo digitado pelo usuário
+        var sexo = prompt("Digite o seu sexo (m/f): ");
+        sexo = sexo.toUpperCase(); // Converter para maiúsculas
+
+        // Verificar se é válido
+        if (sexo == "M" || sexo == "F") { // Comparar com 'M' e 'F'
+            if (sexo == "M") {
+                // Sexo masculino
+                alert("Sexo masculino");
+            } else {
+                // Sexo feminino
+                alert("Sexo feminino");
+            }
+        } else {
+            // Sexo inválido
+            alert("Sexo inválido");
+        }
+    </script>
+</body>
+</html>
